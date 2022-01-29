@@ -54,3 +54,61 @@ lista
 # frase = 'Cientista de Dados é o profissional mais sexy do século XXI'
 frase = 'Cientista de Dados é o profissional mais sexy do século XXI'
 frase [0:18]
+Cientista de Dados
+
+# Exercício 11 - Quanto é 7 elevado na potência 4?
+7 ** 4
+2401
+
+
+# Exercício 12 - Quanto é 21424 divido por 89?
+21424 / 89
+240.7191011235955
+
+
+# Exercício 13 - Imprima a string 'Hello Python de trás pra frente usando indexação.
+string = 'Hello Python'
+string
+string[::-1]
+nohtyP olleH
+
+# Exercício 14 - Usando a string "Hello Python" imprima apenas Python.
+string = 'Hello Python'
+string
+string[6:]
+Python
+
+# Exercício 15 - Descubra o comprimento da string "Hello Python". Use a função len().
+len('Hello Python')
+12
+
+# ou 
+
+string = 'Hello Python'
+len(string)
+12
+
+
+# Exercício 16 - Quebre a string "Hello Python" em uma lista.
+string = "Hello Python"
+string.split()
+['Hello', 'Python']
+
+
+# Exercício 17 - Imprima a string "Hello Python" em caixa alta.
+string = "Hello Python"
+string.upper()
+'HELLO PYTHON'
+
+
+# Exercício 17 - Data a lista a seguir: lst = [1, 2, [3, 4], [5, [100, 200, ['olá']], 23, 11], 1, 7]. Use indexação para obter apenas a string 'olá'. 
+lst = [1, 2, [3, 4], [5, [100, 200, ['olá']], 23, 11], 1, 7]
+print(lst[3][1][2][0])
+olá
+
+
+# Exercício 18 - Ordene a lista: l = [5, 3, 4, 6, 1]
+l = [5, 3, 4, 6, 1]
+l.sort()
+l
+[1, 3, 4, 5, 6]
