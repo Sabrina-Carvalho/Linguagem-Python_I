@@ -2,11 +2,13 @@
 
 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 lista
+[1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
 
 # Exercício 2 - Crie uma lista de 5 objetos e imprima na tela
 lista = ['1', '2', '3', '4', '5']
 lista
+['1', '2', '3', '4', '5']
 
 
 # Exercício 3 - Crie duas strings e concatene as duas em uma terceira string
@@ -14,33 +16,36 @@ string1 = 'Olá'
 string2 = ', Mundo!'
 string3 = string1 + string2
 string3
-
+Olá, Mundo!
 
 # Exercício 4 - Crie uma tupla com os seguintes elementos: 1, 2, 2, 3, 4, 4, 4, 5 e depois utilize a função count do 
 # objeto tupla para verificar quantas vezes o número 4 aparece na tupla
 tupla = (1, 2, 2, 3, 4, 4, 4, 5)
 tupla.count(4)
-
+3
 
 # Exercício 5 - Crie um dicionário vazio e imprima na tela
 dicio = {}
 dicio
+{}
 
 
 # Exercício 6 - Crie um dicionário com 3 chaves e 3 valores e imprima na tela
 dicio = {'Key1': 1, "Key2": 2, 'Key3': 3}
 dicio
+{'Key1': 1, 'Key2': 2, 'Key3': 3}
 
 
 # Exercício 7 - Adicione mais um elemento ao dicionário criado no exercício anterior e imprima na tela
 dicio['Key4'] = 4
 dicio
-
+{'Key1': 1, 'Key2': 2, 'Key3': 3, 'Key4': 4}
 
 # Exercício 8 - Crie um dicionário com 3 chaves e 3 valores. Um dos valores deve ser uma lista de 2 elementos numéricos. 
 # Imprima o dicionário na tela.
 dicio = {'key1': 5, 'Key2': 6, 'Key3': [1, 2]}
 dicio
+{'Key2': 6, 'Key3': [1, 2], 'key1': 5}
 
 
 # Exercício 9 - Crie uma lista de 4 elementos. O primeiro elemento deve ser uma string, 
@@ -49,6 +54,8 @@ dicio
 # Imprima a lista na tela.
 lista = ['String', ('x', 'y'), {'key1': '100', 'key02': '200'}, 4.0]
 lista
+['String', ('x', 'y'), {'key02': '200', 'key1': '100'}, 4.0]
+
 
 # Exercício 10 - Considere a string abaixo. Imprima na tela apenas os caracteres da posição 1 a 18.
 # frase = 'Cientista de Dados é o profissional mais sexy do século XXI'
