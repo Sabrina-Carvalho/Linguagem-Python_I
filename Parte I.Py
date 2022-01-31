@@ -123,12 +123,23 @@ l
 
 # Exercício 19 - Usando chaves e indexação, pegue o 'hello' dos seguintes dicionários 
 d = {'simple_key':'hello'}
+d['simple_key']
+hello
+
 
 d = {'k1': {'k2':'hello'}}
+d['k1']['k2']
+hello
+
 
 d = {'k1':[{'next_key':['this is deep', ['hello']]}]}
+d['k1'][0]['next_key'][1][0]
+hello 
+
 
 d = {'k1': [1,2, {'k2':['this is tricky', {'tough': [1,2,['hello']]}]}]}
+d['k1'][2]['k2'][1]['tough'][2][0]
+hello
 
 
 # Exercício 20 - Dada a lista: l = [1, 2, 6, 9, 8, 1]. Converta a lista para uma tuple. Use a função tuple().
