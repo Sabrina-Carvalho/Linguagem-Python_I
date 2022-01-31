@@ -119,3 +119,19 @@ l = [5, 3, 4, 6, 1]
 l.sort()
 l
 [1, 3, 4, 5, 6]
+
+
+# Exercício 19 - Usando chaves e indexação, pegue o 'hello' dos seguintes dicionários 
+d = {'simple_key':'hello'}
+
+d = {'k1': {'k2':'hello'}}
+
+d = {'k1':[{'next_key':['this is deep', ['hello']]}]}
+
+d = {'k1': [1,2, {'k2':['this is tricky', {'tough': [1,2,['hello']]}]}]}
+
+
+# Exercício 20 - Dada a lista: l = [1, 2, 6, 9, 8, 1]. Converta a lista para uma tuple. Use a função tuple().
+l = [1, 2, 6, 9, 8, 1]
+tuple(l)
+(1, 2, 6, 9, 8, 1)
