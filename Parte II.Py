@@ -77,7 +77,6 @@ else:
 
 # Exercício 10 - Faça um programa que conte quantas vezes a letra "r" aparece na frase abaixo. Use um placeholder na 
 # sua instrução de impressão
-
 # “É melhor, muito melhor, contentar-se com a realidade; se ela não é tão brilhante como os sonhos, tem pelo menos a 
 # vantagem de existir.” (Machado de Assis)
 
@@ -87,3 +86,90 @@ for caracter in frase:
     if caracter == 'r':
         count += 1
 print("O caracter r aparece %s vezes na frase." %(count))
+
+
+
+
+# Exercício 1 - Crie uma função que imprima a sequência de números pares entre 1 e 20 (a função não recebe parâmetro) e 
+# depois faça uma chamada à função para listar os números   
+
+def seq_Num():
+    for i in range(2, 21, 2):
+        print(i)
+
+seq_Num()
+
+
+# Exercício 2 - Crie uma função que receba uma string como argumento e retorne a mesma string em letras maiúsculas.
+# Faça uma chamada à função, passando como parâmetro uma string
+
+def let_Maius(texto):
+    print(texto.upper())
+    return
+
+let_Maius('Hello, World')
+
+
+# Exercício 3 - Crie uma função que receba como parâmetro uma lista de 4 elementos, adicione 2 elementos a lista e 
+# imprima a lista
+
+lista = [1, 2, 3, 4]
+def add_List(lista):
+    print(lista.append(5))
+    print(lista.append(6))
+    
+add_List(lista)
+print(lista)
+
+
+# Exercício 4 - Crie uma função que receba um argumento formal e uma possível lista de elementos. Faça duas chamadas 
+# à função, com apenas 1 elemento e na segunda chamada com 4 elementos
+
+def printNum( arg1, *lista ):
+    print (arg1)
+    for i in lista:
+        print (i)
+    return;
+
+# Chamada à função
+printNum( 100 )
+printNum( 'A', 'B', 'C' )
+
+
+# Exercício 5 - Crie uma função anônima e atribua seu retorno a uma variável chamada soma. A expressão vai receber 2 
+# números como parâmetro e retornar a soma deles
+
+soma = lambda arg1, arg2: arg1 + arg2
+print ("A soma é : ", soma( 452, 298 ))
+
+
+# Exercício 6 - Abaixo você encontra uma lista com temperaturas em graus Celsius
+# Crie uma função anônima que converta cada temperatura para Fahrenheit
+# Dica: para conseguir realizar este exercício, você deve criar sua função lambda, dentro de uma função 
+# (que será estudada no próximo capítulo). Isso permite aplicar sua função a cada elemento da lista
+# Como descobrir a fórmula matemática que converte de Celsius para Fahrenheit? Pesquise!!!
+Celsius = [39.2, 36.5, 37.3, 37.8]
+Fahrenheit = map(lambda temp: (float(9)/5)* temp + 32, Celsius)
+print (list(Fahrenheit))
+
+
+# Exercício 7
+# Crie um dicionário e liste todos os métodos e atributos do dicionário
+dic = {}
+dir(dic)
+
+
+# ************* Desafio ************* (pesquise na documentação Python)
+
+# Exercício 8 - Crie uma função que receba o arquivo abaixo como argumento e retorne um resumo estatístico descritivo 
+# do arquivo. Dica, use Pandas e um de seus métodos, describe()
+# Arquivo: "binary.csv"
+import pandas as pd
+file_name = "binary.csv"
+
+def retor_Arq(file_name):
+    df = pd.read_csv(file_name)
+    return df.describe()
+
+retor_Arq(file_name)
+ 
